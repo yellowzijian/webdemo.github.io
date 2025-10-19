@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simiao Gao, Ph.D. | Statistics & Biostatistics</title>
+  <meta name="description" content="Simiao Gao — Bayesian statistics, network meta‑regression, brain connectivity, statistical methods for complex biomedical data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10; --card:#111216; --ink:#eaeef6; --muted:#b8c0cc; --accent:#8fd3ff; --pill:#1b2430; --line:#232733; --link:#8fd3ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,rgba(11,12,16,.95),rgba(11,12,16,.7));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#2b2f3a,#181a20);border:1px solid var(--line)}
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+    .links a{padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--pill);font-size:14px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;padding-top:28px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    h2{margin:6px 0 10px 0;font-size:22px}
+    h3{margin:22px 0 10px 0;font-size:18px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--pill);border:1px solid var(--line);margin:4px 6px 0 0;font-size:13px;color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:8px 0}
+    .pub{margin:10px 0;padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(143,211,255,0.04)}
+    .meta{color:var(--muted);font-size:13px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,#141722,#0f1219);font-weight:600}
+    .badge{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid var(--line);background:var(--pill);color:var(--muted)}
+    footer{margin:40px 0;color:var(--muted);border-top:1px dashed var(--line);padding-top:20px}
+    code{background:#161a22;border:1px solid var(--line);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h1>Simiao Gao, Ph.D.</h1>
+            <p>Statistics & Biostatistics • Bayesian methods • Brain connectivity</p>
+          </div>
+        </div>
+        <div class="links">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#service">Service</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2>About</h2>
+        <p>I am a Postdoctoral Associate in the Department of Biostatistics at Yale University, working with Prof. Yize Zhao. My research develops <strong>Bayesian hierarchical and meta‑regression models</strong>, graphical and network‑based modeling for <strong>brain connectivity</strong>, and scalable computation for <strong>complex, high‑dimensional biomedical data</strong>.</p>
+        <div class="cta-row">
+          <a class="btn" href="#publications">Latest work</a>
+          <a class="btn" href="#materials">Application materials</a>
+          <a class="btn" href="#contact">Collaborate</a>
+        </div>
+        <div style="margin-top:14px">
+          <span class="pill">Bayesian computation</span>
+          <span class="pill">Network meta‑regression</span>
+          <span class="pill">Neuroimaging</span>
+          <span class="pill">High‑dimensional inference</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul class="list">
+          <li>Developing a Bayesian model for <em>tau propagation</em> on individualized functional connectivity (manuscript in prep.).</li>
+          <li>Multimodal <em>ABCD</em> & <em>HCP</em> analyses link functional–structural gradient coupling with development, behavior, and genetics (under revision).</li>
+          <li>Bayesian network meta‑regression for multivariate aggregate responses with partially/fully missing within‑treatment covariances (revise & resubmit, <em>Biometrics</em>).</li>
+        </ul>
+        <div class="cta-row">
+          <span class="badge">Open to collaborations</span>
+          <span class="badge">Mentoring MS/PhD students</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="grid cols-2" style="margin-top:28px">
+      <div class="card">
+        <h2>Research Interests</h2>
+        <p>Bayesian hierarchical & meta‑regression modeling; network/graphical modeling for brain connectivity; Bayesian computation & inference; statistical methods for complex, high‑dimensional biomedical data.</p>
+        <h3>Current Projects</h3>
+        <ul class="list">
+          <li>Functional–structural <strong>gradient coupling</strong> in development and aging; behavioral & genetic correlates.</li>
+          <li><strong>Genetics → structure → function</strong>: mediation of genetic effects by structural connectivity on functional networks.</li>
+          <li><strong>Tau propagation</strong> on individualized functional connectivity with subtype heterogeneity and sequential dynamics.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>For Prospective Students</h2>
+        <p>I enjoy mentoring on Bayesian modeling, reproducible pipelines, and neuroimaging statistics. If you’re a prospective graduate student interested in these topics, feel free to reach out with a short note about your background and interests.</p>
+        <h3>Technical</h3>
+        <div>
+          <span class="pill">R / Python</span>
+          <span class="pill">Stan / NIMBLE</span>
+          <span class="pill">MCMC / VI</span>
+          <span class="pill">High‑dimensional ML</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" style="margin-top:28px">
+      <div class="card">
+        <h2>Publications & Preprints</h2>
+        <p class="meta">Author order follows the CV. Links go to DOI or preprint pages.</p>
+
+        <h3>Preprints / Under Review</h3>
+        <div class="pub">
+          <strong>P.1</strong> Gao, S.*, Gu, Z.*, Ding, S.*, Wang, G., Zhang, Z., Zhao, H., & Zhao, Y. <em>Brain Functional‑Structural Gradient Coupling Reflects Development, Behavior and Genetic Influences</em>. medRxiv (2025). <a href="https://www.medrxiv.org/content/10.1101/2025.09.16.25335918v1" target="_blank" rel="noopener">Preprint</a>
+        </div>
+        <div class="pub">
+          <strong>P.2</strong> Gao, S., Ding, S., Zhang, X., Gu, Z., & Zhao, Y. <em>The Mediating Role of Structural Connectivity in Genetic Effects on Functional Brain Networks</em>. medRxiv (2025). <a href="https://www.medrxiv.org/content/10.1101/2025.09.16.25335920v1" target="_blank" rel="noopener">Preprint</a>
+        </div>
+        <div class="pub">
+          <strong>P.5</strong> Gao, S., Kim, S., Chen, M.‑H., Ibrahim, J. G., Lin, J., Shah, A. K. <em>Bayesian network meta‑regression models for multivariate aggregate responses…</em> (rev. submitted to <em>Biometrics</em>, 2024).
+        </div>
+
+        <h3>Peer‑reviewed</h3>
+        <div class="pub">
+          <strong>P.6</strong> Houghton, L. A., <em>et al.</em> (incl. Gao, S.). <em>AP&amp;T</em> (2025). <a href="https://doi.org/10.1111/apt.18487" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.7</strong> Li, C., Tian, X., <em>et al.</em> (incl. Gao, S.). <em>Statistics in Medicine</em> (2025). <a href="https://doi.org/10.1002/sim.70069" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.8</strong> Xu, W., Wang, S., <em>et al.</em> (incl. Gao, S.). <em>Imaging Neuroscience</em> (2025). <a href="https://doi.org/10.1162/IMAG.a.56" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.9</strong> Kiernan, P. A., <em>et al.</em> (incl. Gao, S.). <em>J. Cardiovasc. Dev. Dis.</em> (2024). <a href="https://doi.org/10.3390/jcdd11020042" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.10</strong> Kiernan, P. A., <em>et al.</em> (incl. Gao, S.). <em>MSSE</em> (2023). <a href="https://doi.org/10.1111/ijpo.12781" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.11</strong> Sakaki, J. R., <em>et al.</em> (incl. Gao, S.). <em>Int. J. Food Sci. Nutr.</em> (2022). <a href="https://doi.org/10.1080/09637486.2022.2091524" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.12</strong> Pescatello, L. S., <em>et al.</em> (incl. Gao, S.). <em>BMJ Open Sport &amp; Exercise Med.</em> (2021). <a href="https://doi.org/10.1136/bmjsem-2020-000895" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <div class="pub">
+          <strong>P.13</strong> Sakaki, J. R., <em>et al.</em> (incl. Gao, S.). <em>Pediatric Obesity</em> (2021). <a href="https://doi.org/10.1111/ijpo.12781" target="_blank" rel="noopener">DOI</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks" style="margin-top:28px">
+      <div class="card">
+        <h2>Talks</h2>
+        <ul class="list">
+          <li><strong>2025</strong> ICSA Applied Statistics Symposium, Storrs, CT — Bayesian network meta‑regression for multivariate aggregate data (invited).</li>
+          <li><strong>2024</strong> ICSA Applied Statistics Symposium, Nashville, TN — Statistical methods for lifespan biomarkers (invited).</li>
+          <li><strong>2023</strong> New England Statistical Symposium — Network meta‑regression with missing within‑treatment covariances (invited).</li>
+          <li><strong>2023</strong> JSM (Portland, OR) — Heterogeneity analysis on brain connectivity within Bayesian survival framework (contributed).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="teaching" class="grid cols-2" style="margin-top:28px">
+      <div class="card">
+        <h2>Teaching & Mentoring</h2>
+        <ul class="list">
+          <li><strong>UConn Statistical Consulting Workshops (2025)</strong> — Assisted with sessions and Q&amp;A.</li>
+          <li><strong>Columbia University (2015)</strong> — Note‑taking & office hours for students with disabilities.</li>
+          <li><strong>New Oriental Education (2010)</strong> — Led review sessions for ~40 students.</li>
+        </ul>
+        <h3>Mentoring</h3>
+        <ul class="list">
+          <li>Huizhu Jia (MS, Yale) — 2025–present</li>
+          <li>Jianing Zhang (MS, Yale) — 2025</li>
+          <li>Xinzhi Zhang (MS, Yale) — 2024–2025</li>
+          <li>Xiaoyu Shen (Visiting UG, Harvard) — 2023</li>
+        </ul>
+      </div>
+      <div class="card" id="materials">
+        <h2>Application Materials</h2>
+        <p>Tailored for Assistant Professor positions in Statistics/Biostatistics.</p>
+        <ul class="list">
+          <li><a href="#">Curriculum Vitae (PDF)</a> — latest version.</li>
+          <li><a href="#">Research Statement</a> — Bayesian modeling for biomedical sciences.</li>
+          <li><a href="#">Teaching Statement</a> — evidence‑based, inclusive pedagogy.</li>
+          <li><a href="#">DEI Statement</a> — mentoring & community building.</li>
+        </ul>
+        <p class="meta">Replace the placeholders with your files (use the same filenames when you deploy).</p>
+      </div>
+    </section>
+
+    <section id="service" class="grid cols-2" style="margin-top:28px">
+      <div class="card">
+        <h2>Professional Service</h2>
+        <h3>Organizing Committees</h3>
+        <ul class="list">
+          <li>NESS (2022); ISBA, EAC‑ISBA, NESS, SIP (2021)</li>
+        </ul>
+        <h3>Reviewing</h3>
+        <ul class="list">
+          <li>Journal of Computational and Graphical Statistics (2025)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Honors & Awards</h2>
+        <ul class="list">
+          <li>Best Performance in Biostatistics — UConn (2021)</li>
+          <li>Service Award — UConn (2021)</li>
+          <li>Travel Awards — ISBA (2021), UConn Doctoral (2022)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:simiao.gao@yale.edu">simiao.gao@yale.edu</a></p>
+        <p class="meta">Department of Biostatistics, Yale University • 300 George Street, New Haven, CT 06511</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:simiao.gao@yale.edu">Email me</a>
+          <a class="btn" href="#">Google Scholar</a>
+          <a class="btn" href="#">GitHub</a>
+          <a class="btn" href="#">ORCID</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> Simiao Gao — Built with vanilla HTML/CSS. Last updated Oct 2025.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional: JSON‑LD for scholar indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Simiao Gao",
+    "jobTitle": "Postdoctoral Associate",
+    "affiliation": {"@type":"Organization","name":"Yale University"},
+    "email": "mailto:simiao.gao@yale.edu",
+    "url": "https://YOUR_USERNAME.github.io/",
+    "knowsAbout": ["Bayesian statistics","Network meta‑regression","Brain connectivity","Neuroimaging"]
+  }
+  </script>
+</body>
+</html>
